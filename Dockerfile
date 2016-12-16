@@ -23,5 +23,4 @@ RUN mkdir /app
 WORKDIR /app
 
 # Set entrypoint
-ENTRYPOINT ["/usr/local/bin/rancher-compose"]
-CMD ["--version"]
+CMD ["/usr/local/bin/rancher-compose", "--version"]
