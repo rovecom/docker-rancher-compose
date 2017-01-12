@@ -13,6 +13,9 @@ RUN wget -qO- https://github.com/rancher/rancher-compose/releases/download/v${RA
 		mv /tmp/rancher-compose-v${RANCHER_COMPOSE_VERSION}/rancher-compose /usr/local/bin/rancher-compose && \
 		chmod +x /usr/local/bin/rancher-compose
 
+# Install needed packages
+RUN apt-get install -y gettext-base
+
 # Cleanup 
 RUN apt-get -yqq autoremove && \
 		apt-get -yqq clean && \
