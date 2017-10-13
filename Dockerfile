@@ -2,7 +2,7 @@ FROM debian:latest
 
 MAINTAINER Erwin Steffens <esteffens@rovecom.nl>
 
-ENV RANCHER_COMPOSE_VERSION 0.12.2
+ENV RANCHER_COMPOSE_VERSION 0.12.5
 
 # Install certificates and wget
 RUN apt-get -yqq update && \
